@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 2021 Frontend Developer Crash Course</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">WESTERN<span>GARDEN CITY</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+                
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#fac">Facilities</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="#"></a></li>
+                    <li class="go-premium-cta"><a href="#con">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">VISIT US @</p>
+                <h1>WESTERN GARDEN</h1>
+
+    </section>
+
+    <section class="features-section" id="fac">
+        <div class="container">
+            <h3>FACILITIES</h3>
+            <ul class="features-list">
+                <li>GYM</li>
+                <li>BADMINTON</li>
+                <li>LAWN TENNIS</li>
+                <li>SWIMMING POOL</li>
+                <li>FOOTBALL PITCH</li>
+                <li>CYCLING</li>
+                <li>CINEMA</li>
+            </ul>
+
+            <img src="livepics/2.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="livepics/1.1.jpg" alt="Person">
+
+                    <blockquote>"It was a nice exprences out her the pool party was top notic. And i had alot of fun."</blockquote>
+                    <cite>- Jane</cite>
+                </li>
+                <li>
+                    <img src="livepics/sf1.jpg" alt="Person">
+
+                    <blockquote>"It was fun here with my family and firends we had a great time."</blockquote>
+                    <cite>- MUSA</cite>
+                </li>
+                <li>
+                    <img src="livepics/sf2.jpeg" alt="Person">
+
+                    <blockquote>"i had a nice football and gyming section here."</blockquote>
+                    <cite>- MUTIU ABOLARIN</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3698.228517473066!2d7.250659834243929!3d9.107606797561024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e792b5c3aba09%3A0x7c53a964ee75d4b0!2sWestern%20Garden%20city%20Amusement%20Park!5e0!3m2!1sen!2sng!4v1654933289630!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="contact" id="con">
+        <h1>About</h1>
+        <p>Come and say Hello to good life @ Western Garden City</p>
+        <p>Amusement Park Abuja, Along Kubwa-Zuba Express Way</p>
+        <h2><img src="/livepics/whatsup.1.jpg" alt="WHATSUPP" width="30em">08037207436</h2>
+        <h2><a href="https://www.facebook.com/rasaqwestern/"><img src="/livepics/FB1.jpg" alt="facebook" width="200em"></a></h2>
+    </section>
+
+    <section class="copyright">
+        <p>copyright 2022|Western Garden|LALA's Tec</p>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+</html>
